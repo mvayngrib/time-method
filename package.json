@@ -1,0 +1,21 @@
+{
+  "author": "Mark Vayngrib <mark.vayngrib@lablz.com> (http://github.com/mvayngrib)",
+  "bugs": {
+    "url": "https://github.com/mvayngrib/time-method/issues"
+  },
+  "description": "[![NPM](https://nodei.co/npm/time-method.png)](https://nodei.co/npm/time-method/)",
+  "devDependencies": {
+  },
+  "homepage": "https://github.com/mvayngrib/time-method",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "time-method",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvayngrib/time-method.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
