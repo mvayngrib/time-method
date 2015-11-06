@@ -3,7 +3,11 @@ var extend = require('xtend')
 var sortBy = require('sort-by')
 var timeSort = sortBy('-timePerInvocation')
 
-var createNewTimer = module.exports = function (obj) {
+module.exports = timerFor
+timerFor.timerFor = timerFor
+timerFor.timeFunctions = timeFunctions
+
+function timerFor (obj) {
   var methods = {}
   var divideBy = 1
   return {
@@ -76,8 +80,8 @@ var createNewTimer = module.exports = function (obj) {
   }
 }
 
-createNewTimer.timeFunctions = function (obj) {
-  var objTimer = createNewTimer(obj)
+function timeFunctions (obj) {
+  var objTimer = timerFor(obj)
   Object.keys(obj).forEach(function (k) {
     if (typeof obj[k] === 'function') {
       objTimer.time(k)
