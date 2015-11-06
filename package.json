@@ -17,7 +17,7 @@
     "url": "https://github.com/mvayngrib/time-method.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "version": "1.0.1",
   "dependencies": {

@@ -19,7 +19,6 @@ test('basic test', function (t) {
   obj.async()
     .done(function () {
       var stats = timer.getStats()
-      console.log(stats)
       t.equal(stats[0].method, 'async')
       t.equal(typeof stats[0].time, 'number')
       t.equal(stats[1].method, 'sync')
